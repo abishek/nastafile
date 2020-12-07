@@ -1,0 +1,24 @@
+("quicklisp" .
+ (:class qlot/source/dist:source-dist
+  :initargs (:distribution "http://beta.quicklisp.org/dist/quicklisp.txt" :%version :latest)
+  :version "2020-10-16"))
+("ultralisp" .
+ (:class qlot/source/dist:source-dist
+  :initargs (:distribution "http://dist.ultralisp.org/" :%version :latest)
+  :version "20201206192507"))
+("cl-nntp" .
+ (:class qlot/source/github:source-github
+  :initargs (:repos "40ants/cl-nntp" :ref nil :branch nil :tag nil)
+  :version "github-d090b1844e916900a44213b370372562"))
+("cl-mime" .
+ (:class qlot/source/github:source-github
+  :initargs (:repos "40ants/cl-mime" :ref nil :branch nil :tag nil)
+  :version "github-b9c6ce64d3a141bf8494dca36c160361"))
+("post-office" .
+ (:class qlot/source/github:source-github
+  :initargs (:repos "40ants/post-office" :ref nil :branch nil :tag nil)
+  :version "github-54a9bc6ff9941b076d475468fb8e02ec"))
+("trivial-imap" .
+ (:class qlot/source/github:source-github
+  :initargs (:repos "40ants/trivial-imap" :ref nil :branch nil :tag nil)
+  :version "github-b9648548eb96899398d777c52d5a4311"))

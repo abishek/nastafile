@@ -16,3 +16,6 @@
 *.wx64fsl
 *.wx32fsl
 /*.html
+.DS_Store
+.qlot/
+site/
