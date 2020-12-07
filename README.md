@@ -27,3 +27,6 @@ qlot install
   ```
   :GB18030 is not a valid encoding designator
   ```
+* Automatically remove unnecessary quotations and signatures from replies.
+* Add author's name and reply date.
+* Refactor code to look nicer.
