@@ -265,6 +265,9 @@ As the second value it returns ids of root articles.
      (:html
       (:head
        (:title ,title)
+       ;; To make HTML looks nice on mobile devices
+       (:meta :name "viewport"
+              :content "width=device-width, initial-scale=1.0")
        ;; bootstrap cdn for css alone
        (:link :rel "stylesheet"
               :href "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -398,7 +401,8 @@ Returns a hash from id to a list of child message ids.
 
 As the second value it returns ids of root articles.
 "
-  (format t "Dumping ~A articles to the disk" (length articles))
+  (format t "Dumping ~A articles to the disk~%"
+          (length articles))
   
   (handler-bind ((SB-INT:STREAM-DECODING-ERROR
                    (lambda (c)
