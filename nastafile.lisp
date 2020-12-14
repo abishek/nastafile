@@ -482,3 +482,11 @@ As the second value it returns ids of root articles.
   (dump-trees *all-articles*)
   (add-nojekyll-file))
 
+
+(defmain:defmain main
+    ((server "The newsgroup server to connect to.")
+     (port "Port over which to connect to." :default 119)
+     (group "Name of the newsgroup to connect to."))
+  "Utility to generate static HTML from newsgroup archives."
+
+  (process :server server :group group))

@@ -18,6 +18,7 @@
                "group-by"
                "rutils"
                "log4cl-extras"
-               "trivial-garbage")
+               "trivial-garbage"
+               "defmain")
   :components ((:file "package")
                (:file "nastafile")))
