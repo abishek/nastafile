@@ -19,6 +19,12 @@
                "rutils"
                "log4cl-extras"
                "trivial-garbage"
-               "defmain")
+               "defmain"
+               "deploy")
+  :export ("main")
   :components ((:file "package")
-               (:file "nastafile")))
+               (:file "nastafile"))
+  :defsystem-depends-on (:deploy)
+  :build-operation "deploy-op"
+  :build-pathname "nastafile"
+  :entry-point "nastafile:main")

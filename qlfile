@@ -3,5 +3,6 @@ dist ultralisp http://dist.ultralisp.org/
 github cl-nntp 40ants/cl-nntp
 github cl-mime 40ants/cl-mime
 github defmain 40ants/defmain
+github deploy shinmera/deploy
 github post-office 40ants/post-office
 github trivial-imap 40ants/trivial-imap

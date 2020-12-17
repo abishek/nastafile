@@ -18,6 +18,10 @@
  (:class qlot/source/github:source-github
   :initargs (:repos "40ants/defmain" :ref nil :branch nil :tag nil)
   :version "github-b549f440953d1eaed09fb99717092f77"))
+("deploy" .
+ (:class qlot/source/github:source-github
+  :initargs (:repos "shinmera/deploy" :ref nil :branch nil :tag nil)
+  :version "github-52fb06e4b227155f5b6e732bd4c79838"))
 ("post-office" .
  (:class qlot/source/github:source-github
   :initargs (:repos "40ants/post-office" :ref nil :branch nil :tag nil)
