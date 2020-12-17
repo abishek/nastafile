@@ -21,7 +21,6 @@
                "trivial-garbage"
                "defmain"
                "deploy")
-  :export ("main")
   :components ((:file "package")
                (:file "nastafile"))
   :defsystem-depends-on (:deploy)
