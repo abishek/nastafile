@@ -1,4 +1,5 @@
 ;;;; package.lisp
 
 (defpackage #:nastafile
-  (:use #:cl #:split-sequence))
+  (:use #:cl #:split-sequence)
+  (:export :main))
